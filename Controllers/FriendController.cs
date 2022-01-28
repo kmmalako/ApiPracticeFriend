@@ -30,6 +30,7 @@ namespace ApiPractice.Controllers
         }
 
         // GET: api/Friend/5
+        // return Friend of specified id
         [HttpGet("{id}", Name = "Get")]
         public Friend Get(int id)
         {
@@ -46,6 +47,7 @@ namespace ApiPractice.Controllers
         }
 
         // PUT: api/Friend/5
+        // edit Friend of specified id
         [HttpPut("{id}")]
         public List<Friend> Put(int id, [FromBody] Friend friend)
         {
@@ -62,6 +64,7 @@ namespace ApiPractice.Controllers
 
 
         // DELETE: api/Friend/5
+        // relete Friend of specified id
         [HttpDelete("{id}")]
         public List<Friend> Delete(int id)
         {
