@@ -64,7 +64,7 @@ namespace ApiPractice.Controllers
 
 
         // DELETE: api/Friend/5
-        // relete Friend of specified id
+        // delete Friend of specified id
         [HttpDelete("{id}")]
         public List<Friend> Delete(int id)
         {
